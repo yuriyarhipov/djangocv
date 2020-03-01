@@ -1,3 +1,4 @@
 from django.contrib import admin
+from cv.models import Cv
 
-# Register your models here.
+admin.site.register(Cv)
