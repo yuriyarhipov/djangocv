@@ -6,6 +6,10 @@ class Cv(models.Model):
     last_name = models.CharField(max_length=50)
     title = models.CharField(max_length=100)
     information = models.TextField(default='')
+    phone = models.CharField(max_length=50, default='')
+    github = models.URLField(default='')
+    linkedin = models.URLField(default='')
+
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
