@@ -5,7 +5,30 @@
             {{ data.first_name }} {{ data.last_name }} - {{ data.title }}
         </div>
         <div>
+            -------------------------------------------
+        </div>
+        <div>
             {{ data.information }}
+        </div>
+        <div>
+            {{ data.email }}
+        </div>
+        <div>
+            {{ data.phone }}
+        </div>
+        <div>
+            {{ data.github }}
+        </div>
+        <div>
+            {{ data.linkedin }}
+        </div>
+        <div>
+            -------------------------
+        </div>
+        <div>
+            {% for item in data.technologies.all %}
+                {{ item }}
+            {% endfor %}
         </div>
     </body>
 </html>
