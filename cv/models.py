@@ -15,11 +15,7 @@ class Technologies(models.Model):
     def __str__(self):
         return self.title
 
-class Points(models.Model):
-    title = models.TextField(default='')
 
-    def __str__(self):
-        return self.title
 
 class Experience(models.Model):
     start_year = models.IntegerField(default=0)
@@ -27,10 +23,16 @@ class Experience(models.Model):
     title = models.CharField(max_length=100)
     company_name = models.CharField(max_length=100)
     website = models.URLField(default='', blank=True)
-    experience_points = models.ManyToManyField(Points)
 
     def __str__(self):
         return f'{self.start_year}-{self.end_year} {self.title} ({self.company_name})'
+
+class Points(models.Model):
+    title = models.TextField(default='')
+    experience = models.ForeignKey(Experience, on_delete=models.CASCADE, default=None)
+
+    def __str__(self):
+        return self.title
 
 
 class Cv(models.Model):
