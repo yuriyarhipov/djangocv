@@ -8,10 +8,10 @@
         <div class="title">
             {{ data.first_name }} {{ data.last_name }} - {{ data.title }}
         </div>
-        <div class="info">
-            {{ data.information }}
-        </div>
-        <div class="contact">
+        <div class="body">
+            <div>
+                {{ data.information }}
+            </div>
             <div>
                 {{ data.email }}
             </div>
@@ -24,41 +24,31 @@
             <div>
                 {{ data.linkedin }}
             </div>
-        </div>
-        <div>
-            -------------------------
-        </div>
-        <div>
-            {% for item in data.technologies.all %}
-            {{ item }}
-            {% endfor %}
-        </div>
-        <div>
-            -------------------------
-        </div>
-        <div>
-            {% for item in data.education.all %}
-            {{ item }}
-            {% endfor %}
-        </div>
-        <div>
-            -------------------------
-        </div>
-        <div>
-            {% for item in data.experience.all %}
-            {{ item }}
             <div>
-                {% for point in  item.experience_points.all %}
-                {{point}}
+                {% for item in data.technologies.all %}
+                {{ item }}
                 {% endfor %}
             </div>
-            {% endfor %}
+            <div>
+                {% for item in data.education.all %}
+                {{ item }}
+                {% endfor %}
+            </div>
+            <div>
+                {% for item in data.experience.all %}
+                {{ item }}
+                <div>
+                    {% for point in  item.experience_points.all %}
+                    {{point}}
+                    {% endfor %}
+                </div>
+                {% endfor %}
 
+            </div>
         </div>
-
+        <div class="basement">
+            with love from Oryol, 2020
+        </div>
     </div>
-
-
 </body>
-
 </html>
