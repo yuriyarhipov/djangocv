@@ -9,12 +9,12 @@ class Education(models.Model):
     def __str__(self):
         return f'{self.title}, {self.organization}'
 
+
 class Technologies(models.Model):
     title = models.CharField(max_length=50)
 
     def __str__(self):
         return self.title
-
 
 
 class Experience(models.Model):
