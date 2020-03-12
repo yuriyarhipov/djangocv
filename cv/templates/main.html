@@ -1,12 +1,14 @@
 <html>
 {% load static %}
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static "main.css" %}">
 <title>{{ data.first_name }} {{ data.last_name }} - {{ data.title }}</title>
 
 <body>
     <div class="wrapper">
         <div class="title">
-            {{ data.first_name }} {{ data.last_name }} - {{ data.title }}
+            <h1>{{ data.first_name }} {{ data.last_name }}</h1>
+            <h2>{{ data.title }}</h2>
         </div>
         <div class="body">
             <div>
