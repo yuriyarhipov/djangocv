@@ -1,0 +1,9 @@
+yura.cc:
+    cv:
+        ☐ format work expierence
+    blog:
+        ☐ create a Post model
+        ☐ create view with a template
+    deploy:
+        ☐ create basic docker-compose file
+
