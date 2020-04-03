@@ -1,12 +1,17 @@
 yura.cc:
     cv:
         ☐ format work expierence
+        ☐ change settings to postgres
+
     blog:
         ☐ create a Post model
         ☐ create view with a template
     deploy:
-        ☐ create a dockerfile
-        ☐ create basic docker-compose file
+        ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
+        ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
+        ☐ basic deploy on the server
+        ☐ https
+        ☐ DronCI
     logging:
         ☐ install nats
         ☐ install elastic, check Loki and tool from AWS
