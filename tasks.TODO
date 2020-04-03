@@ -5,5 +5,11 @@ yura.cc:
         ☐ create a Post model
         ☐ create view with a template
     deploy:
+        ☐ create a dockerfile
         ☐ create basic docker-compose file
+    logging:
+        ☐ install nats
+        ☐ install elastic, check Loki and tool from AWS
+
+
 
