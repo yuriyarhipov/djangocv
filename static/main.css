@@ -26,3 +26,10 @@
     grid-row-start: 3;
     grid-row-end: 3;
 }
+
+.information {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
