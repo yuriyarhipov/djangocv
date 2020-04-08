@@ -19,23 +19,28 @@
                 {{ data.information }}
             </div>
             <div>
-                email: {{ data.email }}
+                <b>email:</b> {{ data.email }}
             </div>
             <div>
-                github: {{ data.github }}
+                <b>github:</b> {{ data.github }}
             </div>
             <div>
-                linkedin: {{ data.linkedin }}
+                <b>linkedin:</b> {{ data.linkedin }}
             </div>
             <div>
-                {% for item in data.technologies.all %}
-                {{ item }}
-                {% endfor %}
+                <h3>Technologies:</h3>
+                <p>
+                    {% for item in data.technologies.all %}
+                        {{ item }}
+                    {% endfor %}
+                </p>
             </div>
             <div>
-                {% for item in data.education.all %}
-                {{ item }}
-                {% endfor %}
+                <p>
+                    {% for item in data.education.all %}
+                        {{ item }}
+                    {% endfor %}
+                </p>
             </div>
             <div>
                 {% for item in data.experience.all %}
