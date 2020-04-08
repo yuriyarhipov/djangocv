@@ -31,18 +31,17 @@
                 <h3>Technologies:</h3>
                 <p>
                     {% for item in data.technologies.all %}
-                        {{ item }}
+                    {{ item }}
                     {% endfor %}
                 </p>
             </div>
             <div>
                 <h3>Education:</h3>
-                    {% for item in data.education.all %}
-                    <p>
-                        {{ item.start_year }}-{{ item.end_year}} {{ item.title}} ({{ item.organization}})
-                    </p>
-
-                    {% endfor %}
+                {% for item in data.education.all %}
+                <p>
+                    {{ item.start_year }}-{{ item.end_year}} {{ item.title}} ({{ item.organization}})
+                </p>
+                {% endfor %}
 
             </div>
             <div>
@@ -62,4 +61,5 @@
         </div>
     </div>
 </body>
+
 </html>
