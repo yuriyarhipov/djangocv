@@ -2,13 +2,17 @@
 {% load static %}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static "main.css" %}">
-<title>{{ data.first_name }} {{ data.last_name }} - {{ data.title }}</title>
+<title>{{ data.full_name }} - {{ data.title }}</title>
 
 <body>
-    <div class="wrapper">
-        <div class="title">
-            <h1>{{ data.first_name }} {{ data.last_name }}</h1>
-            <h2>{{ data.title }}</h2>
+    <div class="main">
+        <div class="header">
+            <h1 class="full_name">{{ data.full_name }}</h1>
+            <h2 class="full_name">{{ data.title }}</h2>
+            <p>
+                <a href="mailto:{{ data.email }}">{{ data.email }}</a> |
+                <a href="{{ data.github }}">{{ data.github }}</a>
+            </p>
         </div>
         <div class="body">
             <div class="information">

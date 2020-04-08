@@ -1,14 +1,20 @@
-.wrapper {
+.main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.title {
+.header {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.full_name {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .body {
@@ -17,7 +23,6 @@
         grid-row-start: 2;
         grid-row-end: 2;
         font-family: 'Open Sans', sans-serif;
-
 }
 
 .basement {
