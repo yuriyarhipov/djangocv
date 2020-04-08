@@ -5,9 +5,10 @@ class Education(models.Model):
     end_year = models.IntegerField(default=0)
     title = models.CharField(max_length=200)
     organization = models.CharField(max_length=200)
+    website = models.URLField(default='')
 
     def __str__(self):
-        return f'{self.title}, {self.organization}'
+        return self.title
 
 
 class Technologies(models.Model):

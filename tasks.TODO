@@ -6,6 +6,9 @@ yura.cc:
             ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
             ☐ will be great to see an Icon for each item
             ☐ will be great to see three items in each category
+        Education:
+            ☐ add website
+            ☐ add icon for webview
     blog:
         ☐ create a Post model
         ☐ create view with a template
