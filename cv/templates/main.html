@@ -45,13 +45,16 @@
 
             </div>
             <div>
+                <h3>Experience:</h3>
                 {% for item in data.experience.all %}
-                {{ item }}
-                <div>
-                    {% for point in  item.experience_points.all %}
-                    {{point}}
-                    {% endfor %}
-                </div>
+                <p>
+                    {{ item }}
+                    <div>
+                        {% for point in  item.experience_points %}
+                            {{point}}
+                        {% endfor %}
+                    </div>
+                </p>
                 {% endfor %}
 
             </div>

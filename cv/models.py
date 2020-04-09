@@ -25,6 +25,9 @@ class Experience(models.Model):
     company_name = models.CharField(max_length=100)
     website = models.URLField(default='', blank=True)
 
+    def experience_points(self):
+        return Points.objects.filter(experience=self)
+
     def __str__(self):
         return f'{self.start_year}-{self.end_year} {self.title} ({self.company_name})'
 
