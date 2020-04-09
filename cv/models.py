@@ -30,14 +30,14 @@ class Experience(models.Model):
     start_year = models.IntegerField(default=0)
     end_year = models.IntegerField(default=0)
     title = models.CharField(max_length=100)
-    company_name = models.CharField(max_length=100)
-    website = models.URLField(default='', blank=True)
+    organization = models.ForeignKey('Organization', on_delete=models.SET_NULL, null=True)
+    cv = models.ForeignKey('Cv', on_delete=models.SET_NULL, null=True)
 
     def experience_points(self):
         return Points.objects.filter(experience=self)
 
     def __str__(self):
-        return f'{self.start_year}-{self.end_year} {self.title} ({self.company_name})'
+        return f'{self.start_year}-{self.end_year} {self.title} ({self.organization.name})'
 
 class Points(models.Model):
     title = models.TextField(default='')
@@ -57,7 +57,6 @@ class Cv(models.Model):
     github = models.URLField(default='')
     linkedin = models.URLField(default='')
     technologies = models.ManyToManyField(Technologies)
-    experience = models.ManyToManyField(Experience)
 
     @property
     def full_name(self):
