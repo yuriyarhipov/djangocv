@@ -66,5 +66,9 @@ class Cv(models.Model):
     def education(self):
         return Education.objects.filter(cv=self)
 
+    @property
+    def experience(self):
+        return Experience.objects.filter(cv=self)
+
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
