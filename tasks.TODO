@@ -1,7 +1,8 @@
 yura.cc:
     cv:
-        ☐ format work expierence
+        ✔ format work expierence @done (4/9/2020, 5:53:25 PM)
         ✔ change settings to postgres @done (4/6/2020, 1:22:52 AM)
+        ☐ fix year in basement
         Technologies:
             ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
             ☐ will be great to see an Icon for each item
