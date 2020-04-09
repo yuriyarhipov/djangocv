@@ -6,6 +6,7 @@ class Education(models.Model):
     title = models.CharField(max_length=200)
     organization = models.CharField(max_length=200)
     website = models.URLField(default='')
+    cv = models.ForeignKey('Cv', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
@@ -49,7 +50,6 @@ class Cv(models.Model):
     github = models.URLField(default='')
     linkedin = models.URLField(default='')
     technologies = models.ManyToManyField(Technologies)
-    education = models.ManyToManyField(Education)
     experience = models.ManyToManyField(Experience)
 
     @property
