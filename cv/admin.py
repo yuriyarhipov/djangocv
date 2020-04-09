@@ -1,5 +1,5 @@
 from django.contrib import admin
-from cv.models import Cv, Technologies, Education, Experience, Points
+from cv.models import Cv, Technologies, Education, Experience, Points, Organization
 
 
 class PointsAdmin(admin.ModelAdmin):
@@ -12,3 +12,4 @@ admin.site.register(Technologies)
 admin.site.register(Education)
 admin.site.register(Experience)
 admin.site.register(Points, PointsAdmin)
+admin.site.register(Organization)

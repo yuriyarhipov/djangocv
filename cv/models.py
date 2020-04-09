@@ -1,12 +1,19 @@
 from django.db import models
 
+class Organization(models.Model):
+    name = models.CharField(max_length=200)
+    website = models.URLField(blank=True, default='')
+
+    def __str__(self):
+        return self.name
+
+
 class Education(models.Model):
     start_year = models.IntegerField(default=0)
     end_year = models.IntegerField(default=0)
     title = models.CharField(max_length=200)
-    organization = models.CharField(max_length=200)
-    website = models.URLField(default='')
-    cv = models.ForeignKey('Cv', on_delete=models.CASCADE)
+    organization = models.ForeignKey('Organization', on_delete=models.SET_NULL, null=True)
+    cv = models.ForeignKey('Cv', on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.title
@@ -55,6 +62,10 @@ class Cv(models.Model):
     @property
     def full_name(self):
         return f'{self.first_name} {self.last_name}'
+
+    @property
+    def education(self):
+        return Education.objects.filter(cv=self)
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'

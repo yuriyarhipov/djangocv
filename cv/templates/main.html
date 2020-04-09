@@ -37,7 +37,7 @@
             </div>
             <div>
                 <h3>Education:</h3>
-                {% for item in data.education.all %}
+                {% for item in data.education %}
                 <p>
                     {{ item.start_year }}-{{ item.end_year}} {{ item.title}} ({{ item.organization}})
                 </p>
