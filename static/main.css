@@ -30,6 +30,7 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 3;
+    text-align: center;
 }
 
 .information {
