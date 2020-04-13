@@ -25,7 +25,7 @@ SECRET_KEY = 'lh=sx=+t1p&r=)pse$me(yyh=yv+(f&2ss8a@f+h^j-qkjrv*f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['yura.cc', ]
+ALLOWED_HOSTS = ['yura.cc', 'localhost']
 
 
 # Application definition
