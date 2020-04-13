@@ -4,4 +4,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app/
 RUN pip install -r req.txt
+RUN pip install gunicorn
+
 
