@@ -3,6 +3,8 @@ yura.cc:
         ✔ format work expierence @done (4/9/2020, 5:53:25 PM)
         ✔ change settings to postgres @done (4/6/2020, 1:22:52 AM)
         ☐ fix year in basement
+        ☐ fix 0 in present position
+        ☐ revert order of positions
         Technologies:
             ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
             ☐ will be great to see an Icon for each item
@@ -16,7 +18,7 @@ yura.cc:
     deploy:
         ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
         ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
-        ☐ basic deploy on the server
+        ✔ basic deploy on the server @done(20-04-21 16:32)
         ☐ https
         ☐ DronCI
     logging:
