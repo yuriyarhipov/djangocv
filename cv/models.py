@@ -27,8 +27,8 @@ class Technologies(models.Model):
 
 
 class Experience(models.Model):
-    start_year = models.IntegerField(default=0)
-    end_year = models.IntegerField(default=0)
+    start_year = models.IntegerField(null=True, blank=True)
+    end_year = models.IntegerField(null=True, blank=True)
     title = models.CharField(max_length=100)
     organization = models.ForeignKey('Organization', on_delete=models.SET_NULL, null=True)
     cv = models.ForeignKey('Cv', on_delete=models.SET_NULL, null=True)
