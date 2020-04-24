@@ -20,7 +20,8 @@ yura.cc:
         ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
         ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
         ✔ basic deploy on the server @done(20-04-21 16:32)
-        ☐ github actions
+        ✔ github actions @done(20-04-25 02:34)
+        ☐ ansible playbook
         ☐ https
         ☐ DronCI
     logging:
