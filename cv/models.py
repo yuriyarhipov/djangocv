@@ -68,7 +68,7 @@ class Cv(models.Model):
 
     @property
     def experience(self):
-        return Experience.objects.filter(cv=self)
+        return Experience.objects.filter(cv=self).order_by('-start_year')
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'

@@ -4,7 +4,7 @@ yura.cc:
         ✔ change settings to postgres @done (4/6/2020, 1:22:52 AM)
         ✔ fix year in basement @done(20-04-22 16:42)
         ✔ fix 0 in present position @done(20-04-22 01:55)
-        ☐ revert order of positions
+        ✔ revert order of positions @done(20-04-23 01:12)
         ☐ make "Experience" more or less beautiful
         Technologies:
             ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
@@ -20,6 +20,7 @@ yura.cc:
         ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
         ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
         ✔ basic deploy on the server @done(20-04-21 16:32)
+        ☐ github actions
         ☐ https
         ☐ DronCI
     logging:
