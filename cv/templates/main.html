@@ -49,7 +49,7 @@
                 {% for item in data.experience %}
                 <p>
                     <h4>{{ item.title}}</h4>
-                    {{ item.start_year }}-{{ item.end_year|default_if_none:"present"}} {{ item.title}} ({{ item.organization}})
+                    {{ item.start_year }}-{{ item.end_year|default_if_none:"present"}} {{ item.title}} at <b>{{ item.organization}}</b>
                     <div>
                         {% for point in  item.experience_points %}
                             {{point}}
