@@ -1,0 +1,19 @@
+---
+    - hosts: webserver
+      remote_user: root
+    
+      tasks:
+      - name: pull repo
+        command:
+          cmd: git pull
+          chdir: djangocv      
+      - name: stop docker-compose
+        command:
+          cmd: docker-compose stop
+          chdir: djangocv
+      - name: start docker-compose
+        command:
+          cmd: docker-compose up -d
+          chdir: djangocv
+      
+  

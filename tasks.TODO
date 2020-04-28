@@ -13,6 +13,8 @@ yura.cc:
         Education:
             ☐ add website
             ☐ add icon for webview
+        Download:
+            ☐ pdf
     blog:
         ☐ create a Post model
         ☐ create view with a template
@@ -26,6 +28,7 @@ yura.cc:
         ☐ DronCI
     logging:
         ☐ install nats
+        ☐ maybe grafana
         ☐ install elastic, check Loki and tool from AWS
 
 
