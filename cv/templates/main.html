@@ -1,8 +1,13 @@
-<html>
+<!doctype html>
+<html lang="en">
 {% load static %}
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{% static "main.css" %}">
-<title>{{ data.full_name }} - {{ data.title }}</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "main.css" %}">
+    <title>{{ data.full_name }} - {{ data.title }}</title>
+</head>
 
 <body>
     <div class="main">
