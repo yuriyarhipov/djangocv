@@ -1,10 +1,23 @@
 <!doctype html>
 <html lang="en">
 {% load static %}
+
 <head>
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-163577329-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{% static "main.css" %}">
     <title>{{ data.full_name }} - {{ data.title }}</title>
 </head>
@@ -54,10 +67,11 @@
                 {% for item in data.experience %}
                 <p>
                     <h4>{{ item.title}}</h4>
-                    {{ item.start_year }}-{{ item.end_year|default_if_none:"present"}} {{ item.title}} at <b>{{ item.organization}}</b>
+                    {{ item.start_year }}-{{ item.end_year|default_if_none:"present"}} {{ item.title}} at
+                    <b>{{ item.organization}}</b>
                     <div>
                         {% for point in  item.experience_points %}
-                            {{point}}
+                        {{point}}
                         {% endfor %}
                     </div>
                 </p>
