@@ -46,3 +46,10 @@
     text-align: justify;
 }
 
+.experience_title {
+    margin: 0px;
+}
+
+.experience_subtitle {
+    color: gray;    
+}

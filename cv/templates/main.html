@@ -66,14 +66,19 @@
                 <h3>Experience:</h3>
                 {% for item in data.experience %}
                 <p>
-                    <h4>{{ item.title}}</h4>
-                    {{ item.start_year }}-{{ item.end_year|default_if_none:"present"}} {{ item.title}} at
-                    <b>{{ item.organization}}</b>
-                    <div>
+                    <h4 class="experience_title">{{ item.title}}</h4>
+                    <span class="experience_subtitle">
+                        {{ item.organization}} <a
+                            href="{{ item.organization.website }}">{{ item.organization.website }}</a>
+                        ({{ item.start_year }}-{{ item.end_year|default_if_none:"present"}})
+                    </span>
+                    <ul class="experience_body">
                         {% for point in  item.experience_points %}
-                        {{point}}
+                        <li>
+                            {{point}}
+                        </li>
                         {% endfor %}
-                    </div>
+                    </ul>
                 </p>
                 {% endfor %}
 
