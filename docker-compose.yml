@@ -1,16 +1,15 @@
 version: '3'
 
 services:
-  nginx:
-    build: nginx/
+  caddy:
+    image: caddy:2.0.0
     ports:
-      # The HTTP port
-      - "80:80"
-    volumes: 
-      - ./static:/static/
-    depends_on:
-      - web
-    
+      - 80:80
+      - 443:443
+    volumes:
+      - ./caddy:/etc/caddy
+      - ./static:/static
+
   db:
     image: postgres
     environment:
@@ -24,9 +23,5 @@ services:
     command: gunicorn --bind=0.0.0.0 djangocv.wsgi
     volumes:
       - .:/app
-    ports:
-      - "8000:8000"
     depends_on:
       - db
-
-
