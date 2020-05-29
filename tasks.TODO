@@ -1,35 +1,32 @@
 yura.cc:
     cv:
-        ✔ format work expierence @done (4/9/2020, 5:53:25 PM)
-        ✔ change settings to postgres @done (4/6/2020, 1:22:52 AM)
-        ✔ fix year in basement @done(20-04-22 16:42)
-        ✔ fix 0 in present position @done(20-04-22 01:55)
-        ✔ revert order of positions @done(20-04-23 01:12)
-        ☐ make "Experience" more or less beautiful
-        Technologies:
-            ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
-            ☐ will be great to see an Icon for each item
-            ☐ will be great to see three items in each category
-        Education:
-            ☐ add website
-            ☐ add icon for webview
-        Download:
-            ☐ pdf
-    blog:
-        ☐ create a Post model
-        ☐ create view with a template
-    deploy:
-        ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
-        ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
-        ✔ basic deploy on the server @done(20-04-21 16:32)
-        ✔ github actions @done(20-04-25 02:34)
-        ✔ ansible playbook @done(20-04-30 00:31)
-        ☐ https
-        ☐ DronCI
-    logging:
-        ☐ install nats
-        ☐ maybe grafana
-        ☐ install elastic, check Loki and tool from AWS
+        v1:
+            general:
+                ✔ format work expierence @done (4/9/2020, 5:53:25 PM)
+                ✔ change settings to postgres @done (4/6/2020, 1:22:52 AM)
+                ✔ fix year in basement @done(20-04-22 16:42)
+                ✔ fix 0 in present position @done(20-04-22 01:55)
+                ✔ revert order of positions @done(20-04-23 01:12)
+                ✔ make "Experience" more or less beautiful @done(20-05-29 17:26)
+            Download:
+                ☐ pdf
+            deploy:
+                ✔ create a dockerfile @done (4/3/2020, 5:36:12 PM)
+                ✔ create basic docker-compose file @done (4/3/2020, 5:36:13 PM)
+                ✔ basic deploy on the server @done(20-04-21 16:32)
+                ✔ github actions @done(20-04-25 02:34)
+                ✔ ansible playbook @done(20-04-30 00:31)
+                ✔ https @done(20-05-29 17:26)
 
-
-
+        v2:
+            Technologies:
+                ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
+                ☐ will be great to see an Icon for each item
+                ☐ will be great to see three items in each category
+            Education:
+                ☐ add website
+                ☐ add icon for webview
+            logging:
+                ☐ install nats
+                ☐ maybe grafana
+                ☐ install elastic, check Loki and tool from AWS
