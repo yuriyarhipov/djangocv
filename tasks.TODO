@@ -1,4 +1,7 @@
 yura.cc:
+    blog:
+        geheral:
+            ☐ create a simple page with posts
     cv:
         v1:
             general:
@@ -19,6 +22,8 @@ yura.cc:
                 ✔ https @done(20-05-29 17:26)
 
         v2:
+            Deploy:
+                ☐ simple deploy with pyinfra
             Technologies:
                 ☐ create "categories" like: Frontend, Backend, DevOps, Databases, Other tools
                 ☐ will be great to see an Icon for each item
@@ -27,6 +32,5 @@ yura.cc:
                 ☐ add website
                 ☐ add icon for webview
             logging:
-                ☐ install nats
                 ☐ maybe grafana
                 ☐ install elastic, check Loki and tool from AWS
